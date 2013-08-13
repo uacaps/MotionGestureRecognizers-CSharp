@@ -1,0 +1,9 @@
+﻿<Window x:Name="mainWindow" x:Class="PanGestureDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:PanGestureDemo"
+        Title="MainWindow" Height="768" Width="1024" Loaded="WindowIsLoaded">
+    <Canvas x:Name="mainCanvas" HorizontalAlignment="Left" Height="88" VerticalAlignment="Top" Width="100" Background="#FF813131"/>
+
+
+</Window>
