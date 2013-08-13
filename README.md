@@ -2,7 +2,7 @@ Motion Gestures for C#
 =============
 
 This is a drop-in wrapper on top of the classes for interacting with a Leap Motion - it allows for the handling of gesture recognition similar to what you would find in the world of iOS: simple listeners and events abstracted as high as they can go.
-
+ 
 What you get:
 * Pan Gesture
 * Swipe Gesture
