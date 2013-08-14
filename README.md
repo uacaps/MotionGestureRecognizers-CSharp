@@ -64,7 +64,7 @@ Now, single click on Leap.dll and look at it's properties in the bottom right of
 
 **Step 3 - Set Target Framework**
 
-Set the target framework for your project to .NET 4.0 by double clicking on "Properties" in your solution explorer and selecting ".NET Framework 4" from the "Target Framework" drop down menu under the "Application" tab.
+Set the target framework for your project to .NET 4.0 by double clicking on "Properties" in your solution explorer and selecting ".NET Framework 4" from the "Target Framework" drop down menu under the "Application" tab. Of course if you are using .NET 3.5, you should do this same thing, just for 3.5. Really, just make sure the referenced Leap dll and your target framework are the same.
 
 Now you should be all set!
 
