@@ -162,6 +162,19 @@ Not shown in the example handler above is that each recognizer has an identifier
 ```
 
 --------------------
+## Extrapolating Location ##
+
+We have provided a static helper method for determining where in a given window a Leap Vector might be. This is particularly helpful for the MotionPanGestureRecognizer, as it allows one to create a virtual mouse or pointer. The method can be found in <code>MotionGestureRecognizer.cs</code> and is called <code>public static Point locationOfVectorInWindow(Leap.Vector leapVector, Window w, double scalar)</code>.
+
+The three parameters are:
+* The Leap Vector you want translated to a window point
+* The window you would like the point translated to
+* A scalar multiplier akin to mouse sensitivity. This controls how much a change in the leap vector affects a change in window points
+
+
+We have a great demo of how to use this in our demos folder called PanGestureDemo. Be sure to check it out if you want to get a pointer up and running quickly.
+
+--------------------
 ## Enabling/Disabling Gestures ##
 
 Disabling and enabling gesture is simple! Just call <code>gesture.stopListening();</code> to shut down the gesture and <code>gesture.startListening();</code> to restart it. It's that simple! Now you have the ability to easily build modes of operation based on what is being displayed in a window (i.e. a selection screen may have one set of gestures, whereas a control screen may have another).
