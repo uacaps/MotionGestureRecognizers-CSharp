@@ -25,7 +25,7 @@ There are a few ways to get Motion Gestures into your app, depending on how you 
 
 **Step 1 (a) - Add Motion Gestures Nuget Package (Preferred Method)**
 
-Install the <code>MotionGestures.1.0.0.nupkg</code> Nuget package. This will import the <code>MotionGestures.dll</code> and add it as a reference. It will also add other dependencies associated with MotionGestures (except Leap dlls).
+Install the <code>MotionGestures.x.x.x.nupkg</code> Nuget package. This will import the <code>MotionGestures.dll</code> and add it as a reference. It will also add other dependencies associated with MotionGestures (except Leap dlls).
 
 You can also find the nuget package on [Nuget.org](https://www.nuget.org/packages/MotionGestures/)
 
