@@ -70,7 +70,7 @@ namespace MotionGestures
 
         }
 
-        public static Point locationOfVectorInWindow(Leap.Vector leapVector, Window w, double scaler)
+        public static Point locationOfVectorInWindow(Leap.Vector leapVector, Window w, double scalar)
         {
             double XScale = w.RenderSize.Width / MotionXDomain;
             double YScale = w.RenderSize.Height / MotionYDomain;
@@ -79,13 +79,13 @@ namespace MotionGestures
             double xPosition = 0;
             if (leapVector.x <= 0)
             {
-                if (leapVector.x * scaler < MotionXMinimum)
+                if (leapVector.x * scalar < MotionXMinimum)
                 {
-                    xPosition = leapVector.x * scaler - MotionXMinimum;
+                    xPosition = leapVector.x * scalar - MotionXMinimum;
                 }
                 else
                 {
-                    xPosition = (double)Math.Abs(MotionXMinimum - leapVector.x * scaler);
+                    xPosition = (double)Math.Abs(MotionXMinimum - leapVector.x * scalar);
                 }
             }
             else
@@ -100,8 +100,8 @@ namespace MotionGestures
             double yMidpoint = MotionYDomain / 2;
             double yDifference = yPosition - (yMidpoint); //+ or - version
 
-            yDifference = yDifference * scaler;
-            double newY = yDifference + MotionYDomain / 2;
+            yDifference = yDifference * scalar;
+            double newY = -yDifference + MotionYDomain / 2;
 
             //Calculate window scaled X and Y
             double windowScaledX = xPosition * XScale;
