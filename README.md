@@ -16,7 +16,7 @@ Some things you'll need:
 
 **Also Available for Mac**
 
-The Motion Gesture Recognizer libraries are also available in Objective-C for mac here: https://github.com/uacaps/MotionGestureRecognizers-ObjC
+The Motion Gesture Recognizer libraries are also available in Objective-C for mac here: [Motion Gestures for Mac](https://github.com/uacaps/MotionGestureRecognizers-ObjC)
 
 --------------------
 ## Set-Up ##
@@ -26,6 +26,8 @@ There are a few ways to get Motion Gestures into your app, depending on how you 
 **Step 1 (a) - Add Motion Gestures Nuget Package (Preferred Method)**
 
 Install the <code>MotionGestures.1.0.0.nupkg</code> Nuget package. This will import the <code>MotionGestures.dll</code> and add it as a reference. It will also add other dependencies associated with MotionGestures (except Leap dlls).
+
+You can also find the nuget package on [Nuget.org](https://www.nuget.org/packages/MotionGestures/)
 
 **Step 1 (b) - Add Motion Gestures dll**
 
