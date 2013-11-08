@@ -50,7 +50,7 @@ Start off by dragging every file in the **Classes** top-level directory of the r
 
 **Step 2 - Add Leap dlls**
 
-You will also need to drag the following dlls from the leap motion SDK into your project
+You will also need to drag the following dlls from the leap motion SDK into your project. At this time, **only x64 Leap dlls** are verified to work with our demos. Please make sure you use these and not x86.
 
 ```csharp
 Leap.dll
