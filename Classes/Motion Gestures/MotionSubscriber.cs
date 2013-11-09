@@ -44,9 +44,9 @@ namespace MotionGestures
         public Boolean active { get; set; }
         public MotionGestureRecognizer recognizer { get; set; }
 
-        public override boolean equals(Object o)
+        public override bool Equals(object obj)
         {
-            return o == identifier;
+            return identifier.Equals(obj);
         }
     }
 }
